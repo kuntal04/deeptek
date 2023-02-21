@@ -1,0 +1,7 @@
+web:
+  image: sandipholambe/csvserver:latest
+  container_name: kuntal
+  ports:
+    - 9393:9300
+  volumes:
+    - ./inputFile:/csvserver/inputdata
